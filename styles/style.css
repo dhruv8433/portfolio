@@ -1,0 +1,12 @@
+/* media quary for image in hero section */
+.image-continaer {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .image-continaer {
+    display: none;
+  }
+}
+
+/* other components */

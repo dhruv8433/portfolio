@@ -1,6 +1,5 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
-import { Link } from "@nextui-org/link";
 import clsx from "clsx";
 
 import { Providers } from "./providers";
@@ -10,6 +9,7 @@ import { fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
 import AosContainer from "@/types/AosContainer";
 import Footer from "@/components/Footer";
+import '@/styles/style.css';
 
 export const metadata: Metadata = {
   title: {
