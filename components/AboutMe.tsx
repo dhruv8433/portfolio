@@ -7,11 +7,11 @@ const AboutMe: React.FC = () => {
 
     return (
         <div className="mt-10" id="about">
-            <div className="flex justify-center flex-wrap">
+            <div data-aos="fade-up"  className="flex justify-center flex-wrap">
                 <div className="md:w-[40%] flex ">
                     <img src={profilePicSrc} className="aspect-square object-cover rounded-md" height={400} width={400} />
                 </div>
-                <div className="md:w-[60%] flex flex-col justify-center">
+                <div data-aos="fade-up"  className="md:w-[60%] flex flex-col justify-center">
                     <div className="text-center">
                         <h1 className="text-3xl font-semibold mb-4">About Me</h1>
                     </div>
