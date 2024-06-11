@@ -9,7 +9,7 @@ const AboutMe: React.FC = () => {
         <div className="mt-10" id="about">
             <div data-aos="fade-up"  className="flex justify-center flex-wrap">
                 <div className="md:w-[40%] flex ">
-                    <img src={profilePicSrc} className="aspect-square object-cover rounded-md" height={400} width={400} />
+                    <img src={profilePicSrc} className="aspect-square object-cover rounded-md" height={400} width={400} alt="myimg2"/>
                 </div>
                 <div data-aos="fade-up"  className="md:w-[60%] flex flex-col justify-center">
                     <div className="text-center">
