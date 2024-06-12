@@ -7,20 +7,25 @@ const AboutMe: React.FC = () => {
 
     return (
         <div className="mt-10" id="about">
-            <div data-aos="fade-up"  className="flex justify-center flex-wrap">
+            <div data-aos="fade-up" className="flex justify-center flex-wrap">
                 <div className="md:w-[40%] flex ">
-                    <img src={profilePicSrc} className="aspect-square object-cover rounded-md" height={400} width={400} alt="myimg2"/>
+                    <img src={profilePicSrc} className="aspect-square object-cover rounded-md" height={400} width={400} alt="myimg2" />
                 </div>
-                <div data-aos="fade-up"  className="md:w-[60%] flex flex-col justify-center">
+                <div data-aos="fade-up" className="md:w-[60%] flex flex-col justify-center">
                     <div className="text-center">
-                        <h1 className="text-3xl font-semibold mb-4">About Me</h1>
+                        <h1 className="text-3xl font-semibold my-4">About Me</h1>
                     </div>
+                    {/* update this */}
                     <div className="content p-2">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur itaque perspiciatis tempore modi. Explicabo, quas. Commodi, necessitatibus reiciendis quisquam officiis at eveniet dicta nostrum dignissimos ipsum iure quo nobis accusantium? Asperiores modi officia rem, iure id mollitia excepturi commodi facere qui, nemo ipsa nihil explicabo sint omnis eveniet ratione expedita.</p>
+                        <h1 className="my-2 font-semibold ">About</h1>
 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptatibus officia distinctio itaque quidem repellendus debitis enim, voluptate nisi laboriosam est quod, dolore magni consequatur porro quas ducimus illum unde.</p>
+                        <p className="my-2">Hello! I'm Dhruv Soni, a passionate Full Stack Developer with 2 years of experience in designing, developing, and deploying robust web applications. My journey in software development has equipped me with a comprehensive understanding of both front-end and back-end technologies, allowing me to create seamless and user-friendly digital experiences.</p>
 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, vero!</p>
+                        <h1 className="my-2 font-semibold">Education</h1>
+                        <p>I hold a bechlore's degree in Computer Science from Gujrat Technology University [GTU], where I honed my technical skills and developed a solid foundation in computer science principles.</p>
+
+                        <h1 className="my-2 font-semibold">Personal Interests</h1>
+                        <p>When I'm not coding, you can find me exploring nature and traveling. These activities help me stay creative and balanced, providing new perspectives and inspiration. I believe in the power of continuous improvement and strive to bring my best self to every project I undertake.</p>
                     </div>
                 </div>
             </div>
