@@ -19,13 +19,13 @@ const AboutMe: React.FC = () => {
                     <div className="content p-2">
                         <h1 className="my-2 font-semibold ">About</h1>
 
-                        <p className="my-2">Hello! I'm Dhruv Soni, a passionate Full Stack Developer with 2 years of experience in designing, developing, and deploying robust web applications. My journey in software development has equipped me with a comprehensive understanding of both front-end and back-end technologies, allowing me to create seamless and user-friendly digital experiences.</p>
+                        <p className="my-2">Hello! I&apos;m Dhruv Soni, a passionate Full Stack Developer with 2 years of experience in designing, developing, and deploying robust web applications. My journey in software development has equipped me with a comprehensive understanding of both front-end and back-end technologies, allowing me to create seamless and user-friendly digital experiences.</p>
 
                         <h1 className="my-2 font-semibold">Education</h1>
-                        <p>I hold a bechlore's degree in Computer Science from Gujrat Technology University [GTU], where I honed my technical skills and developed a solid foundation in computer science principles.</p>
+                        <p>I hold a bechlore&apos;s degree in Computer Science from Gujrat Technology University [GTU], where I honed my technical skills and developed a solid foundation in computer science principles.</p>
 
                         <h1 className="my-2 font-semibold">Personal Interests</h1>
-                        <p>When I'm not coding, you can find me exploring nature and traveling. These activities help me stay creative and balanced, providing new perspectives and inspiration. I believe in the power of continuous improvement and strive to bring my best self to every project I undertake.</p>
+                        <p>When I&apos;m not coding, you can find me exploring nature and traveling. These activities help me stay creative and balanced, providing new perspectives and inspiration. I believe in the power of continuous improvement and strive to bring my best self to every project I undertake.</p>
                     </div>
                 </div>
             </div>
