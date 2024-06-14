@@ -8,7 +8,7 @@ type Skill = {
 const SkillCard: React.FC<{ skill: Skill }> = ({ skill }) => {
     return (
         <div className="flex flex-col items-center">
-            <img src={skill.imageUrl} alt={skill.name} className="w-32 h-32 p-1 border border-gray-500 rounded-md object-cover mb-2" />
+            <img src={skill.imageUrl} alt={skill.name} className="w-32 h-32 updatrounded-md object-cover mb-2" />
             <p className="text-sm text-center font-semibold">{skill.name}</p>
         </div>
     );
