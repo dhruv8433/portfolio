@@ -8,8 +8,8 @@ type Skill = {
 const SkillCard: React.FC<{ skill: Skill }> = ({ skill }) => {
     return (
         <div className="flex flex-col items-center">
-            <img src={skill.imageUrl} alt={skill.name} className="w-32 h-32 border border-gray-500 rounded-md object-cover mb-2" />
-            <p className="text-sm text-center">{skill.name}</p>
+            <img src={skill.imageUrl} alt={skill.name} className="w-32 h-32 p-1 border border-gray-500 rounded-md object-cover mb-2" />
+            <p className="text-sm text-center font-semibold">{skill.name}</p>
         </div>
     );
 };
@@ -61,7 +61,7 @@ const MarqueeSkills: React.FC = () => {
 
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
-                        <div data-aos="fade-up">
+                        <div data-aos="fade-up" className=' border p-4 border-gray-500 rounded-md'>
                             <h2 className="text-xl font-bold mb-4 text-center"> Framework and Librarys</h2>
                             <div data-aos="fade-up" className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
                                 {LibraryFramework.map((skill, index) => (
@@ -69,7 +69,7 @@ const MarqueeSkills: React.FC = () => {
                                 ))}
                             </div>
                         </div>
-                        <div>
+                        <div data-aos="fade-up" className='border p-4 border-gray-500 rounded-md'>
                             <h2 data-aos="fade-up" className="text-xl font-bold mb-4 text-center">Deploy Tools</h2>
                             <div data-aos="fade-up" className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
                                 {deploySkills.map((skill, index) => (
