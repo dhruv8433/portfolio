@@ -26,7 +26,7 @@ const HeroSection: React.FC = () => {
             </div>
 
             {/* my info */}
-            <div className="w-full flex flex-wrap mt-5 justify-center">
+            <div data-aos="fade-up" className="w-full flex flex-wrap mt-5 justify-center">
                 <div className="text-center md:w-1/2 lg:w-1/4 px-2 mb-4">
                     <h1 className='text-3xl font-semibold'>+700</h1>
                     <p>hours of work</p>
