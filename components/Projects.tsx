@@ -60,15 +60,15 @@ const projects = [
 
 const Projects: React.FC = () => {
   return (
-    <div id="projects" className="pt-1">
+    <div id="projects" className="py-1 mb-5">
       <div data-aos="fade-up" className="text-center">
         <h1 className="text-3xl font-semibold my-10">Projects</h1>
       </div>
       <div className="max-w-auto mx-auto px-4 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (
-          <div data-aos="fade-up" key={index} className="bg-white rounded-lg shadow-lg flex flex-col">
-            <img src={project.images[0]} alt={project.title} className="w-full h-48 object-cover" />
-            <div className="p-6 flex flex-col flex-grow">
+          <div data-aos="fade-up" key={index} className="bg-gray-200 p-3 dark:bg-gray-900 rounded-lg shadow-lg flex flex-col">
+            <img src={project.images[0]} alt={project.title} className="w-full h-48 object-cover rounded-md" />
+            <div className="p-3 flex flex-col flex-grow">
               <h2 data-aos="fade-up" className="text-xl font-bold mb-2">{project.title}</h2>
               <p data-aos="fade-up" className="text-gray-700 dark:text-gray-400 mb-4 flex-grow">{project.description}</p>
               <div data-aos="fade-up" className="mb-4">
@@ -84,13 +84,13 @@ const Projects: React.FC = () => {
               <div data-aos="fade-up" className="flex justify-between items-center mt-2">
                 <a
                   href={project.githubLink}
-                  className="text-blue-500 hover:bg-blue-600 hover:text-white hover:p-1 hover:rounded-md duration-300 hover:scale-105"
+                  className="text-blue-500 hover:bg-blue-600 dark:text-white hover:text-white hover:p-1 hover:rounded-md duration-300 hover:scale-105"
                 >
                   GitHub
                 </a>
                 <a
                   href={project.liveLink}
-                  className="text-purple-500 hover:bg-purple-600 hover:text-white hover:p-1 hover:rounded-md duration-300 hover:scale-105"
+                  className="text-purple-500 dark:text-white hover:bg-purple-600 hover:text-white hover:p-1 hover:rounded-md duration-300 hover:scale-105"
                 >
                   Live Demo
                 </a>
