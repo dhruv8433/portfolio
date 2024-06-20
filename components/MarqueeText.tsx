@@ -62,10 +62,10 @@ const MarqueeSkills: React.FC = () => {
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
                         <div data-aos="fade-up" className=' border p-4 border-gray-500 rounded-md'>
-                            <h2 className="text-xl font-bold mb-4 text-center"> Framework and Librarys</h2>
+                            <h2 data-aos="fade-up" className="text-xl font-bold mb-4 text-center"> Framework and Librarys</h2>
                             <div data-aos="fade-up" className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
                                 {LibraryFramework.map((skill, index) => (
-                                    <SkillCard key={index} skill={skill} />
+                                    <StaticCards key={index} skill={skill} />
                                 ))}
                             </div>
                         </div>
@@ -73,7 +73,7 @@ const MarqueeSkills: React.FC = () => {
                             <h2 data-aos="fade-up" className="text-xl font-bold mb-4 text-center">Deploy Tools</h2>
                             <div data-aos="fade-up" className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
                                 {deploySkills.map((skill, index) => (
-                                    <SkillCard key={index} skill={skill} />
+                                    <StaticCards key={index} skill={skill} />
                                 ))}
                             </div>
                         </div>
@@ -85,3 +85,14 @@ const MarqueeSkills: React.FC = () => {
 };
 
 export default MarqueeSkills;
+
+const StaticCards: React.FC<{ skill: Skill }> = ({ skill }) =>  (
+    <div className="relative overflow-hidden">
+      <img
+        src={skill.imageUrl}
+        alt={skill.name}
+        className="w-32 h-32 object-cover transform transition-transform duration-500 hover:scale-110"
+      />
+    </div>
+  );
+  
