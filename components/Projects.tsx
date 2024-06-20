@@ -88,12 +88,12 @@ const Projects: React.FC = () => {
                 >
                   GitHub
                 </a>
-                <a
+               {project.liveLink !== '#' && <a
                   href={project.liveLink}
                   className="text-purple-500 dark:text-white hover:bg-purple-600 hover:text-white hover:p-1 hover:rounded-md duration-300 hover:scale-105"
                 >
                   Live Demo
-                </a>
+                </a>}
               </div>
             </div>
           </div>
