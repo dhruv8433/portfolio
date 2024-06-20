@@ -18,7 +18,7 @@ export const siteConfig = {
     },
     {
       label: "Projects",
-      href: "#projects  ",
+      href: "#projects",
     },
     {
       label: "Blog",
