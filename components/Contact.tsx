@@ -64,22 +64,22 @@ const Contact: React.FC = () => {
                     <h2 className="text-3xl font-bold text-center mb-8">Contact Us</h2>
                     <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
                         <div className="form-group">
-                            <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
+                            <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-white">Name</label>
                             <input type="text" id="name" {...register("name")} className={`mt-1 p-2 block w-full border ${errors.name ? 'border-red-500' : 'border-gray-300'} rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500`} />
                             {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>}
                         </div>
                         <div className="form-group">
-                            <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
+                            <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-white">Email</label>
                             <input type="email" id="email" {...register("email")} className={`mt-1 p-2 block w-full border ${errors.email ? 'border-red-500' : 'border-gray-300'} rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500`} />
                             {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
                         </div>
                         <div className="form-group">
-                            <label htmlFor="subject" className="block text-sm font-medium text-gray-700">Subject</label>
+                            <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-white">Subject</label>
                             <input type="text" id="subject" {...register("subject")} className={`mt-1 p-2 block w-full border ${errors.subject ? 'border-red-500' : 'border-gray-300'} rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500`} />
                             {errors.subject && <p className="text-red-500 text-sm mt-1">{errors.subject.message}</p>}
                         </div>
                         <div className="form-group">
-                            <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message</label>
+                            <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-white">Message</label>
                             <textarea id="message" {...register("message")} rows={5} className={`mt-1 p-2 block w-full border ${errors.message ? 'border-red-500' : 'border-gray-300'} rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500`}></textarea>
                             {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>}
                         </div>
