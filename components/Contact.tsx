@@ -36,7 +36,7 @@ const Contact: React.FC = () => {
                 <div className="w-full md:w-1/2 p-5">
                     <Spline
                         scene="https://prod.spline.design/k1vod-zEg4plR6Ce/scene.splinecode"
-                        style={{background: "transparent"}}
+                        style={{ background: "transparent" }}
                     />
                 </div>
                 <div className="md:w-[50%] p-5">
