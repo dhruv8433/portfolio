@@ -10,6 +10,7 @@ import { Navbar } from "@/components/navbar";
 import AosContainer from "@/types/AosContainer";
 import Footer from "@/components/Footer";
 import '@/styles/style.css';
+import '@/styles/globals.css'
 
 export const metadata: Metadata = {
   title: {
@@ -48,8 +49,12 @@ export default function RootLayout({
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <AosContainer />
-          <div className="relative flex flex-col h-screen">
+          <div className="relative flex flex-col h-screen zindex-0">
             <Navbar />
+             {/* Watermark background */}
+             <div className="watermark">
+                DHRUV
+            </div>
             <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
               {children}
             </main>

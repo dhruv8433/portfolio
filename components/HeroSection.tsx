@@ -8,7 +8,7 @@ const HeroSection: React.FC = () => {
     const profilePicSrc: string = ProfilePic.src;
 
     return (
-        <div id='#' className=''>
+        <div id='#' className='hero-section relative'>
             <div data-aos="fade-up" className="col-span-12 md:hidden md:col-span-6 p-5 flex justify-center">
                 <img src={profilePicSrc} height={400} width={400} className='aspect-square object-cover' alt="Profile" />
             </div>
