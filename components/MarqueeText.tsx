@@ -87,12 +87,13 @@ const MarqueeSkills: React.FC = () => {
 export default MarqueeSkills;
 
 const StaticCards: React.FC<{ skill: Skill }> = ({ skill }) =>  (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden flex justify-center items-center gap-2 border rounded-md transform transition-transform duration-500 hover:scale-110 hover:cursor-pointer p-2">
       <img
         src={skill.imageUrl}
         alt={skill.name}
-        className="w-32 h-32 object-cover transform transition-transform duration-500 hover:scale-110"
+        className="w-10 h-10 object-cover "
       />
+      <h1 className='flex justify-center items-center font-semibold'>{skill.name}</h1>
     </div>
   );
   
